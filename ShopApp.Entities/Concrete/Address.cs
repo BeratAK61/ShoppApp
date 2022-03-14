@@ -1,0 +1,26 @@
+﻿using Core.Entities.Abstract;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ShopApp.Entities.Concrete
+{
+    public class Address : EntityBase , IEntity
+    {
+        public string AddressTitle { get; set; }
+        public string District { get; set; }
+        public string Street { get; set; }
+        public string ApartmentNumber { get; set; }
+        public string ApartmentName { get; set; }
+        public string AddressDescription { get; set; }
+
+
+        public string UserId { get; set; }
+        public User User { get; set; }
+
+
+        public List<Order> Orders { get; set; }
+    }
+}
