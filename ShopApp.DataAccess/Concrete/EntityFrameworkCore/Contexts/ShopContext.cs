@@ -40,6 +40,7 @@ namespace ShopApp.DataAccess.Concrete.EntityFrameworkCore.Contexts
             builder.ApplyConfiguration(new ProductMap());
             builder.ApplyConfiguration(new UserMap());
 
+            base.OnModelCreating(builder);
         }
     }
 }

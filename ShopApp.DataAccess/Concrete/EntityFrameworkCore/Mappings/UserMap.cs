@@ -13,6 +13,9 @@ namespace ShopApp.DataAccess.Concrete.EntityFrameworkCore.Mappings
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
+
+            builder.HasKey(u => u.Id);
+
             builder.Property(u => u.Name).IsRequired();
             builder.Property(u => u.Name).HasMaxLength(25);
 
