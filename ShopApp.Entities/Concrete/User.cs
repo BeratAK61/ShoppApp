@@ -15,6 +15,7 @@ namespace ShopApp.Entities.Concrete
         public string Age { get; set; }
 
 
+        public Cart Cart { get; set; }
 
         public List<Address> Addresses { get; set; }
         public List<Order> Orders { get; set; }

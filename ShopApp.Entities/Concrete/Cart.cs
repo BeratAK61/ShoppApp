@@ -10,6 +10,7 @@ namespace ShopApp.Entities.Concrete
     public class Cart : EntityBase , IEntity
     {
         public string UserId { get; set; }
+        public User User { get; set; }
 
         public List<CartItem> CartItems { get; set; }
     }
