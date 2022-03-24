@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\EntityFrameworkCore\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
