@@ -20,7 +20,8 @@ namespace ShopApp.Business.Mapping.Profiles
                 .ForMember(dest => dest.IsActive, opt => opt.MapFrom(x => true));
 
             CreateMap<ProductUpdateDto, Product>()
-                .ForMember(dest => dest.ModifiedTime, opt => opt.MapFrom(x => DateTime.Now));
+                .ForMember(dest => dest.ModifiedTime, opt => opt.MapFrom(x => DateTime.Now))
+                .ReverseMap();
 
             CreateMap<ProductDto, Product>().ReverseMap();
 
