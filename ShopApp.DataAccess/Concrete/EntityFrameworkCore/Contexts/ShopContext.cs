@@ -26,6 +26,7 @@ namespace ShopApp.DataAccess.Concrete.EntityFrameworkCore.Contexts
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -39,6 +40,7 @@ namespace ShopApp.DataAccess.Concrete.EntityFrameworkCore.Contexts
             builder.ApplyConfiguration(new OrderMap());
             builder.ApplyConfiguration(new ProductMap());
             builder.ApplyConfiguration(new UserMap());
+            builder.ApplyConfiguration(new UserRefreshTokenMap());
 
             base.OnModelCreating(builder);
         }

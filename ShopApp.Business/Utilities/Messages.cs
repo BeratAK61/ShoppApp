@@ -44,7 +44,7 @@ namespace ShopApp.Business.Utilities
         public static string UserNotChecked = "Kullanıcı Bulunamadı";
 
         public static string EmailSent = "E-Posta Gönderildi";
-
+        public static string EmailNotConfirmed = "Email Onaylanmamış";
 
 
         public static string InvalidDateOfProduction = "Lütfen geçerli bir tarih giriniz";
