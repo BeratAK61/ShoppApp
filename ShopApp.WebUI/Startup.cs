@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ShopApp.Business.Mapping.Profiles;
 using ShopApp.DataAccess.Concrete.EntityFrameworkCore.Contexts;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,15 @@ namespace ShopApp.WebUI
 
 
             services.AddControllersWithViews();
+
+            services.AddAutoMapper(
+                typeof(AddressProfile),
+                typeof(BrandProfile),
+                typeof(CartItemProfile),
+                typeof(CartProfile),
+                typeof(CategoryProfile),
+                typeof(OrderItemProfile),
+                typeof(ProductProfile));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

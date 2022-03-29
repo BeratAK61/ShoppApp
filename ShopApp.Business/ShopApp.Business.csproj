@@ -7,12 +7,17 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="6.3.0" />
     <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="FluentValidation" Version="10.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ShopApp.DataAccess\ShopApp.DataAccess.csproj" />
     <ProjectReference Include="..\ShopApp.Entities\ShopApp.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validation\FluentValidation\" />
   </ItemGroup>
 
 </Project>
